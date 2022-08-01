@@ -6,7 +6,13 @@ A bluetooth tracking application for the esp32. Connects multiple esp32's togeth
 
 Change the constant of the node id for each node. The node with the id the same as the 'master id' will write the data from all nodes within the network to the serial monitor.
 
-Upload the code to various nodes and plug the master node into your computer to read out all the data.
+Upload the code to various nodes, using for example the Arduino IDE, and plug the master node into your computer to read out all the data.
+
+# Issues
+
+- Sometimes not all nodes want to share their data or even connect to the network at all.
+- The way the JSON objects are created is very unsecure when it comes to memory allocation.
+- Some nodes can crash and restart. This happens frequently.
 
 # Notes
 
